@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/g4"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="选择您的排位分段"
+        android:textColor="#44BDED"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner_rank"
+        android:layout_width="220dp"
+        android:layout_height="64dp"
+        android:entries="@array/data"
+        android:spinnerMode="dialog" />
+<!--上面用entries加东西-->
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="选择你的拿手英雄~"
+        android:textColor="#F5684A"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner_hero"
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的段位是："/>
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="倔强青铜"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的擅长的英雄是："/>
+        <TextView
+            android:id="@+id/hero"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亚瑟"/>
+        <ImageView
+            android:id="@+id/im_hero"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+    </LinearLayout>
+
+</LinearLayout>
